@@ -317,7 +317,7 @@ declare module Backbone {
     }
 
     // SYNC
-    function sync(method, model, options?: JQueryAjaxSettings);
+    var sync: (method, model, options?: JQueryAjaxSettings)=>void;
     var emulateHTTP: boolean;
     var emulateJSONBackbone: boolean;
 
